@@ -8,7 +8,7 @@ const app = new App({
 
 
 app.event('channel_created', async ({ event, context }) => {
-  const channelCreatedNotifyChannel = process.env.CHANNEL_CREATED_NOTIFY_CHANNEL || '#general';
+  const channelCreatedNotifyChannel = process.env.NOTIFICATION_LOCATION || '#general';
   try {
     const result = await app.client.chat.postMessage({
       token: context.botToken,
