@@ -1,5 +1,4 @@
 const { App } = require('@slack/bolt');
-const store = require('./store');
 
 const app = new App({
   signingSecret: process.env.SLACK_SIGNING_SECRET,
