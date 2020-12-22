@@ -4,10 +4,12 @@ This is newChannelBot,it can make notification of new Slack Channel at Appropria
 # Platform
 
 * Slack
+* Heroku
 
 # How to use
 
-* Clone this repository at Glitch.
+* Clone this repository at Github.
+* deploy your repository to Heroku.
 * Create SlackApp on your Environment.
 
 # Scope
@@ -20,3 +22,5 @@ This is newChannelBot,it can make notification of new Slack Channel at Appropria
 * Your App must be subscribed to [Events API](https://api.slack.com/events-api).
 * Your app needs to be subscribed to the events mentioned in the *Events* section.
 * Your app needs to be subscribed [`channel_created`](https://api.slack.com/events/channel_created).
+* If you use free version of Heroku,you will have to solve cold start problem.
+* this problem can be solved with using [Advanced Scheduler](https://elements.heroku.com/addons/advanced-scheduler).
