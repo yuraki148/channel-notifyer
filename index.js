@@ -1,5 +1,4 @@
 const { App } = require('@slack/bolt');
-const store = require('./store');
 
 const app = new App({
   signingSecret: process.env.SLACK_SIGNING_SECRET,
@@ -8,11 +7,11 @@ const app = new App({
 
 
 app.event('channel_created', async ({ event, context }) => {
-  const channelCreatedNotifyChannel = process.env.CHANNEL_CREATED_NOTIFY_CHANNEL || '#general';
+  const notificationLocation = process.env.NOTIFICATION_LOCATION || '#d_channel-watcher';
   try {
     const result = await app.client.chat.postMessage({
       token: context.botToken,
-      channel: channelCreatedNotifyChannel,
+      channel: notificationLocation,
       text: `#${event.channel.name} チャンネルが作られたよ!🎉`,
       link_names: true
     });

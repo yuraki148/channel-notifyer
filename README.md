@@ -1,32 +1,26 @@
-# Slack Bolt - Hello World
+# About
+This is newChannelBot,it can make notification of new Slack Channel at Appropriate channel.
 
-Read the tutorial at:
-[https://api.slack.com/tutorials/hello-world-bolt](https://api.slack.com/tutorials/hello-world-bolt)
+# Platform
 
+* Slack
+* Heroku
 
----
+# How to use
 
-This is a simple example App built with [Slack's Bolt Framework](https://slack.dev/bolt/tutorial/getting-started) for node.js.
+* Clone this repository at Github.
+* deploy your repository to Heroku.
+* Create SlackApp on your Environment.
 
-Our App shows a welcome message when a user opens the "app home".
+# Scope
+-  [`chat:write`](https://api.slack.com/scopes/chat:write)
+-  [`channels:read`](https://api.slack.com/scopes/channels:read)
 
-### Slack API & features used in the app
-
-* The [`app_home_opened`](https://api.slack.com/events/app_home_opened) event gets triggered when a user opens the bot's "app home" for the first time
-* The app uses the Bolt's `say` method to send a welcome message to the user
-
-### Requirements
+# Requirements
 
 * A Bot User must be added to your App
-* Your App must be subscribed to [Events API](https://api.slack.com/events-api)
-* Your app needs to be subscribed to the events mentioned in the *Events* section
-
-### Scopes
-
-* [`chat:write`](https://api.slack.com/scopes/chat:write)
-
-### Events
-
-#### Workspace events
-* [`app_home_opened`](https://api.slack.com/events/app_home_opened)
-
+* Your App must be subscribed to [Events API](https://api.slack.com/events-api).
+* Your app needs to be subscribed to the events mentioned in the *Events* section.
+* Your app needs to be subscribed [`channel_created`](https://api.slack.com/events/channel_created).
+* If you use free version of Heroku,you will have to solve cold start problem.
+* this problem can be solved with using [Advanced Scheduler](https://elements.heroku.com/addons/advanced-scheduler).
