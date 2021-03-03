@@ -5,15 +5,28 @@
   "description": "A basic example of using the Slack Bolt ⚡️ SDK",
   "main": "index.js",
   "scripts": {
-    "test": "echo \"Error: no test specified\" && exit 1",
-    "start": "node index.js"
+    "start": "npm run build && npm run serve",
+    "build": "npx tsc",
+    "serve": "node --require dotenv/config dist/app.js",
+    "test": "echo \"Error: no test specified\" && exit 1"
   },
   "author": "Tomomi Imura <opensource@slack.com>",
   "license": "MIT",
   "dependencies": {
-    "@slack/bolt": "^1.8.1"
+    "@slack/bolt": "^1.8.1",
+    "dotenv": "^8.2.0"
   },
-  "devDependencies": {},
+  "devDependencies": {
+    "@types/eslint": "^7.2.6",
+    "@types/node": "^14.14.31",
+    "@typescript-eslint/eslint-plugin": "^4.16.1",
+    "@typescript-eslint/parser": "^4.16.1",
+    "eslint": "^7.21.0",
+    "eslint-config-prettier": "^8.1.0",
+    "eslint-plugin-prettier": "^3.3.1",
+    "prettier": "^2.2.1",
+    "typescript": "^4.2.2"
+  },
   "repository": {
     "type": "git",
     "url": "git+https://github.com/yuraki148/newChannelBot.git"
