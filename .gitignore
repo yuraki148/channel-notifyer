@@ -3,7 +3,7 @@ node_modules
 npm-debug.log
 
 # dist
-dist/*map
+dist/
 
 # Local development
 *.env
