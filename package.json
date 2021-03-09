@@ -10,7 +10,7 @@
     "serve": "node --require dotenv/config dist/app.js",
     "test": "echo \"Error: no test specified\" && exit 1"
   },
-  "author": "Tomomi Imura <opensource@slack.com>",
+  "author": "Yuki Uraki <yuki.uraki@tam-bourine.co.jp>",
   "license": "MIT",
   "dependencies": {
     "@slack/bolt": "^3.2.0",
