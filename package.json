@@ -29,10 +29,10 @@
   },
   "repository": {
     "type": "git",
-    "url": "git+https://github.com/yuraki148/newChannelBot.git"
+    "url": "git+https://github.com/yuraki148/channel-notifyer.git"
   },
   "bugs": {
-    "url": "https://github.com/yuraki148/newChannelBot/issues"
+    "url": "https://github.com/yuraki148/channel-notifyer/issues"
   },
-  "homepage": "https://github.com/yuraki148/newChannelBot#readme"
+  "homepage": "https://github.com/yuraki148/channel-notifyer#readme"
 }
